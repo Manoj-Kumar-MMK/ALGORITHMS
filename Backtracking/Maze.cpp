@@ -50,7 +50,16 @@ void solve(int a[4][4])
 }
 int main()
 {
-    int a[4][4] = {{1, 0, 0, 0}, {1, 1, 0, 1}, {0, 1, 0, 0}, {1, 1, 1, 1}};
-    solve(a);
+    int a[4][4] = {0};
+    int n,x,y;
+    cout << "Enter the number of obstacles:";
+    cin >> n;
+    cout << "Enter the obstacles in the format of x and y cordinate:\n";
+    for (int i = 0; i < n;i++)
+    {
+        cin >> x >> y;
+        a[x][y] = 1;
+}
+        solve(a);
     return 0;
 }
